@@ -1,27 +1,29 @@
 {
-  "name": "nuxtjs-spa-example",
+  "name": "dx-example",
   "version": "1.0.0",
-  "description": "My awesome Nuxt.js project",
-  "author": "ymatsuo",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/vuetify": "^1.11.2",
-    "nuxt": "^2.0.0",
-    "vuetify": "^2.2.27"
+    "@nuxtjs/axios": "^5.12.0",
+    "nuxt": "^2.14.0"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1",
-    "sass-loader": "^8.0.2",
-    "vuetify-loader": "^1.4.3"
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.0.5"
   }
 }
